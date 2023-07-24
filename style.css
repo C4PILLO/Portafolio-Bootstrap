@@ -1,0 +1,188 @@
+body {
+    background-color: var(--color-fondo);
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primario: #02416d;
+    --color-secundario: #0a5483;
+    --color-terciario: #066699;
+    --color-cuaternario: #01C38E;
+    --color-fondo: honeydew;
+    
+}
+.bg-negro {
+    background-color: var(--color-fondo);
+}
+
+.section1 {
+    background: url(img/planet.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-nav {
+    background: url(img/planet.jpg);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.container a {
+    color: var(--color-cuaternario);
+}
+
+.imagen {
+    width: 100px;
+}
+
+.tamaño {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tamaño2 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+.tamaño3 {
+    margin: 0 5vw;
+}
+
+.bg-purpple {
+    background-color: #aa7fd2;
+}
+
+.titles {
+    font-size: 60px;
+    color: var(--color-cuaternario);
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+
+.titles:hover {
+    color: var(--color-fondo);
+}
+.pared{
+    background: url(./img/planet2.jpg);
+    
+}
+.pared a{
+    background-color: rgba(128, 128, 128, 0.187);
+    border-radius: 100px;
+    box-shadow: 0 0 10px #ffffff;
+    margin-right: 30px;
+    
+}
+.foto {
+    position: absolute;
+    top:-20vh;
+    height: 80vmin;
+    z-index: 999;
+}
+
+.foto:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #02416d;
+    -webkit-box-shadow: 0px 0px 15px 15px #01C38E;
+
+}
+.icon-navbar{
+    width: 8vh;
+    height: 8vh;
+    margin: 10px;
+}
+h1 {
+    font-size: 120px;
+    color: var(--color-fondo);
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    font-family: 'Archivo Black', sans-serif;
+    
+}
+
+h1:hover {
+    color: var(--color-cuaternario);
+}
+
+h4 {
+    margin: 0;
+    height: 50vmin;
+    width: 100vmin;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h4::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -26vmin;
+    left: 29vmin;
+    width: 62vmin;
+    height: 62vmin;
+    border-radius: 50%;
+    border: 1.3vmin solid currentColor;
+    box-sizing: border-box;
+}
+
+em {
+    font-family: 'Josefin Sans', sans-serif;
+    color: currentColor;
+    font-size: 15vmin;
+    position: relative;
+    font-style: normal;
+    width: 30vmin;
+    text-align: center;
+}
+
+em.planet {
+    -webkit-animation: planet-rotate 10s linear infinite;
+    animation: planet-rotate 10s linear infinite;
+    position: relative;
+}
+
+em.planet::before {
+    content: "";
+    position: absolute;
+    top: -.5vmin;
+    left: 3.5vmin;
+    z-index: -1;
+    width: 13vmin;
+    height: 13vmin;
+    border-radius: 50%;
+
+}
+
+em.planet.left {
+    -webkit-transform-origin: 40vmin 5vmin;
+    transform-origin: 40vmin 5vmin;
+}
+
+em.planet.right {
+    -webkit-transform-origin: -20vmin 5vmin;
+    transform-origin: -20vmin 5vmin;
+}
+
+@-webkit-keyframes planet-rotate {
+    to {
+        -webkit-transform: rotate(1turn);
+    }
+}
+
+@keyframes planet-rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.planeta {
+    width: 20vmin;
+    filter: hue-rotate(75deg);
+}
