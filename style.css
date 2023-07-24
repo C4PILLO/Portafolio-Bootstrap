@@ -1,7 +1,10 @@
 body {
-    background-color: var(--color-fondo);
+    background: url(./img/planet2.jpg);
     padding: 0;
     margin: 0;
+}
+html{
+    font-size: 60%;
 }
 
 :root {
@@ -67,8 +70,7 @@ body {
     color: var(--color-fondo);
 }
 .pared{
-    background: url(./img/planet2.jpg);
-    
+    backdrop-filter: blur(10px);
 }
 .pared a{
     background-color: rgba(128, 128, 128, 0.187);
